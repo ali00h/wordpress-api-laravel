@@ -1,0 +1,245 @@
+{
+	"info": {
+		"_postman_id": "655d05c0-640e-4455-baf1-96168dba53f3",
+		"name": "Wordpress Laravel",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "blog",
+			"item": [
+				{
+					"name": "blog/get_posts",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"language\":\"fa\",\"category_id\":\"\"}"
+						},
+						"url": {
+							"raw": "{{base_api_url}}blog/get_posts",
+							"host": [
+								"{{base_api_url}}blog"
+							],
+							"path": [
+								"get_posts"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "gallery",
+			"item": [
+				{
+					"name": "gallery/get_images",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"gallery_id\":\"38\"}"
+						},
+						"url": {
+							"raw": "{{base_api_url}}gallery/get_images",
+							"host": [
+								"{{base_api_url}}gallery"
+							],
+							"path": [
+								"get_images"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "menu",
+			"item": [
+				{
+					"name": "menu/get_urls",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"menu_id\":\"2\"}"
+						},
+						"url": {
+							"raw": "{{base_api_url}}menu/get_urls",
+							"host": [
+								"{{base_api_url}}menu"
+							],
+							"path": [
+								"get_urls"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "page",
+			"item": [
+				{
+					"name": "page/get_page_by_name",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"names\":[\"about-fa\"]}"
+						},
+						"url": {
+							"raw": "{{base_api_url}}page/get_page_by_name",
+							"host": [
+								"{{base_api_url}}page"
+							],
+							"path": [
+								"get_page_by_name"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "form",
+			"item": [
+				{
+					"name": "form/send_message",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"name\":\"ali\",\r\n\"email\":\"ali@yahoo\",\r\n\"subject\":\"salam\",\r\n\"message\":\"salam khobi?\",\r\n\"locale\":\"en\"}"
+						},
+						"url": {
+							"raw": "{{base_api_url}}form/send_message",
+							"host": [
+								"{{base_api_url}}form"
+							],
+							"path": [
+								"send_message"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_api_url",
+			"value": "http://localhost:8000/api/"
+		}
+	]
+}
